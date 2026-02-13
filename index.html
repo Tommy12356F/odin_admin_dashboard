@@ -1,52 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Admin Dashboard</title>
-</head>
-<body>
-    <div class="dashboard">
-        <div class="sidebar"></div>
-        <div class="rightbar">
-            <div class="header">
-                <div class="header-top">
-                    <div class="search">Search</div>
-                    <div class="profile">Profile</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+        <title>Admin Dashboard</title>
+    </head>
+    <body>
+        <div class="dashboard">
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+
+                <div class="branding">
+                    <h1>
+                    <span class="material-symbols-outlined">dashboard</span>
+                    Dashboard
+                    </h1>
                 </div>
 
-                <div class="header-bottom">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                <div class="nav-main">
+                    <ul>
+                        <li>
+                            <span class="material-symbols-outlined">home</span>
+                            Home
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">person</span>
+                            Profile
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">chat</span>
+                            Messages
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">history</span>
+                            History
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">task</span>
+                            Tasks
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">groups</span>
+                            Communities
+                        </li>
+                    </ul>
                 </div>
+
+                <div class="nav-secondary">
+                    <ul>
+                        <li>
+                            <span class="material-symbols-outlined">settings</span>
+                            Settings
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">help</span>
+                            Support
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">privacy_tip</span>
+                            Privacy
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+            <div class="rightbar">
+                <div class="header">
+                    <div class="header-top">
+                        <span class="material-symbols-outlined">search</span>
 
-            <div class="maincontent">
-                <div class="yourprojects">
-                    <div class="card">Project 1</div>
-                    <div class="card">Project 2</div>
-                    <div class="card">Project 3</div>
-                    <div class="card">Project 4</div>
-                    <div class="card">Project 5</div>
-                    <div class="card">Project 6</div>
-
-
-                </div>
-                <div class="sidepanel">
-                    <div class="annoucements">
-                        <h2>Annoucements</h2>
-                        
+                        <div class="profile">Profile</div>
                     </div>
-                    <div class="trending"></div>
+
+                    <div class="header-bottom">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
                 </div>
+
+                <div class="maincontent">
+                    <div class="yourprojects">
+                        <div class="card">Project 1</div>
+                        <div class="card">Project 2</div>
+                        <div class="card">Project 3</div>
+                        <div class="card">Project 4</div>
+                        <div class="card">Project 5</div>
+                        <div class="card">Project 6</div>
+
+
+                    </div>
+                    <div class="sidepanel">
+                        <div class="announcements">
+                            <h2>Annoucements</h2>
+                            <p>Announcements content</p>
+                            
+                        </div>
+                        <div class="trending">
+                            <h2>Trending</h2>
+                            <p>@user1</p>
+                            <p>@user2</p>
+                            <p>@user3</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-    </div>
-    
-    
-</body>
+        
+        
+    </body>
 </html>
