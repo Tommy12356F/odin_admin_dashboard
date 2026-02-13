@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.dashboard {
+  min-height: 100vh;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+}
+
+.sidebar {
+  grid-row: 1 / -1;
+  background-color: #307baa;
+}
+
+.rightbar {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  /* this means header auto height and content takes the rest of the space */
+}
+
+
+.maincontent {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  min-height: 100%;
+}
+
+.sidepanel {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+.sidepanel {
+  background: lightyellow;
+}
+
+.announcements {
+  background: lightblue;
+}
+
+.trending {
+  background: lightgreen;
+}
+.yourprojects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 150px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bottom {
+  display: flex;
+  gap: 15px;
+}
+.header-top,
+.header-bottom {
+  border: 1px dashed #ccc;
+}
+
+
